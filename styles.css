@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121214;
+    color: #F5F5F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.main-background {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    background-color: #1C1C1E;
+    border: 1px solid #2C2C2E;
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.icon1 {
+    top: -50px;
+    right: -30px;
+}
+
+.icon2 {
+    bottom: -50px;
+    left: -30px;
+}
+
+.youtube-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FF0000;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 51px;
+    font-weight: 700;
+    color: #F5F5F7;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.cta-button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+    
+    .subtitle {
+        font-size: 36px;
+    }
+    
+    .cta-button {
+        font-size: 18px;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 27px;
+    }
+    
+    .cta-button {
+        font-size: 16px;
+        padding: 0.7rem 1.2rem;
+    }
+    
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
+}
